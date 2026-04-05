@@ -1,0 +1,112 @@
+.packages {
+    padding: 3rem 0;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: #333;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0 auto 50px auto;
+    padding-bottom: 10px;
+    display: block;
+    width: max-content;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width:100%;
+        height:4px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        border-radius: 2px;
+    }
+}
+
+.packages_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 10px;
+}
+
+.item {
+    flex: 1 1 20rem;
+    height: 18rem;
+    box-shadow: 0 4px 8px 0 #333333b2;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform .4s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem .7rem;
+    font-size: 1.2rem;
+    color: #faf6f9;
+    background: rgba(53, 53, 53, 0.44);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #82cff0, #4061e4, #30c6dd85, #d691e8);
+    background-size: 300% 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    &:hover {
+        background-position: 100% 0;
+    }
+}
+
+.item:hover .content {
+    top: calc(100% - 45px);
+}
+
+/*============= media queries ===================*/
+
+@media (max-width: 1028px) {
+   .item {
+    flex: 0 1 22rem;
+   }
+}
+
+
+@media (max-width: 855px) {
+   .item {
+    flex: 0 1 20rem;
+   }
+}
+

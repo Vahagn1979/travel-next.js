@@ -1,0 +1,71 @@
+.aboutTeam {
+    padding-inline: 10px;
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.workers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+.worker {
+    flex: 1 1 22rem;
+    box-shadow: 2px 2px 5px rgb(38, 37, 37);
+    border-radius: 6px;
+}
+
+.worker_img {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.content {
+    margin: 7px 12px;
+    text-align: center;
+
+    p {
+        margin-top: 5px;
+        font-style: italic;
+        color: rgb(86, 84, 84);
+    }
+
+}
+
+/*============= media queries ===================*/
+@media (max-width: 1125px) {
+
+    .worker {
+        flex: 0 1 22rem;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .worker {
+        flex: 1 1 15rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .worker {
+        flex: 0 1 22rem;
+    }
+}
+

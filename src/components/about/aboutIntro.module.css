@@ -1,0 +1,22 @@
+.aboutIntro {
+    margin-top: 5.5rem;
+    margin-bottom: 40px;
+    padding-inline: 10px;
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: "Liberation Serif", serif;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.3rem;
+        text-indent: 1.8rem;
+        line-height: 1.3rem;
+        /* text-align: justify; */
+        font-style: italic;
+        font-family: "Harlow Solid Italic", serif;
+    }
+}
+
