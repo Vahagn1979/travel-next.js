@@ -9,7 +9,7 @@ const Navbar = ({data}) => {
         <nav className={`${styles.navbar} ${showNavbar ? styles.active : ""}`} onClick={() => setShowNavbar(false)}>
             {
                 data.map(elem => (
-                    <Link href={`http://localhost:3000${elem.url}`} key={elem.id}>
+                    <Link href={`https://travel-next-js-sand.vercel.app${elem.url}`} key={elem.id}>
                         {elem.title}
                     </Link>
                 ))
