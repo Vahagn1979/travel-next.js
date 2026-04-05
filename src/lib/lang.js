@@ -15,5 +15,6 @@ export const createLang = async (formData) => {
         path: "/",
         maxAge: 60 * 60 * 24 * 365 * 10,
         sameSite: "lax",
+        secure: true ,
     });
 };
