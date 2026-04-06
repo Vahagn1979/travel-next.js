@@ -1,4 +1,4 @@
-import { createLang } from "@/lib/lang";
+import {createLang} from "../../../lib/lang";
 
 const ChangeLanguageBtn = ({lang}) => {
 
